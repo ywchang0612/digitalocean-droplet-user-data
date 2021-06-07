@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # install lnmp
-apt install nginx mariadb-server zip
-apt install php7.4-fpm php7.4-mysql php7.4-curl php7.4-bcmath php7.4-mbstring php7.4-xml php7.4-zip
+apt -y install nginx mariadb-server zip
+apt -y install php7.4-fpm php7.4-mysql php7.4-curl php7.4-bcmath php7.4-mbstring php7.4-xml php7.4-zip
 
 # install npm dependencies
-apt install nodejs npm
+apt -y install nodejs npm
 
 # install deploy dependencies
-apt install acl
+apt -y install acl
 
 # install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
